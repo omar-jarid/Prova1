@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Omar Jarid - Form multi-selezione</title>
+</head>
+<body>
+    <h1>Form multi-selezione</h1>
+    <form method="post">
+        <h2>Informazioni personali</h2>
+
+        <div>
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required>
+            <label for="cognome">Cognome:</label>
+            <input type="text" id="cognome" name="cognome" required>
+        </div>
+        <br>
+        <div>
+            <label for="telefono">Telefono:</label>
+            <input type="tel" id="telefono" name="telefono">
+            <label for="cellulare">Cellulare:</label>
+            <input type="tel" id="cellulare" name="cellulare">
+        </div>
+        <br>
+        <div>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+        </div>
+        <br>
+        <div>
+            <label for="data-nascita">Data di nascita:</label>
+            <input type="date" id="data-nascita" name="data-nascita" required>
+            <label for="genere">Genere:</label>
+            <select id="genere" name="genere" required>
+                <option value="">Seleziona...</option>
+                <option value="maschio">Maschio</option>
+                <option value="femmina">Femmina</option>
+
+                <!-- Sto inserendo un campo dummy per far vedere un valore disabilitato. -->
+                <option value="disabilitato" disabled>Disabilitato</option>
+                <option value="altro">Altro</option>
+            </select>
+        </div>
+        <br>
+        <div>
+            <label for="lingue">Lingue parlate:</label>
+            <label>
+                <input type="checkbox" name="lingue" value="italiano"> Italiano
+            </label>
+            <label>
+                <input type="checkbox" name="lingue" value="inglese"> Inglese
+            </label>
+            <label>
+                <input type="checkbox" name="lingue" value="francese"> Francese
+            </label>
+            <label>
+                <input type="checkbox" name="lingue" value="spagnolo"> Spagnolo
+            </label>
+            <label>
+                <input type="checkbox" name="lingue" value="tedesco"> Tedesco
+            </label>
+        </div>
+        <br>
+        <textarea id="commenti" name="commenti" rows="4" cols="50" placeholder="Commenti aggiuntivi..."></textarea>
+        <br><br>
+        <label>
+            <input type="checkbox" name="t-and-c" value="t-and-c" required> Accetto i termini e le condizioni
+        </label>
+        <br><br>
+        <button type="submit">Invia</button>
+        <button type="reset">Reset</button>
+
+    </form>
+</body>
+</html>

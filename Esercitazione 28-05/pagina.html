@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Omar Jarid - Pagina blog semantica</title>
+</head>
+<body>
+    <header>
+        <h1>Omar Jarid</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Chi sono</a></li>
+                <li><a href="#">Elenco della spesa</a></li>
+                <li><a href="#">Ricetta</a></li>
+                <li><a href="#">Galleria immagini</a></li>
+            </ul>
+        </nav>
+
+        <div>
+            <p>Tema:</p>
+            <input type="radio" id="tema-chiaro" name="tema" value="chiaro" checked>
+            <label for="tema-chiaro">Chiaro</label>
+            <input type="radio" id="tema-scuro" name="tema" value="scuro">
+            <label for="tema-scuro">Scuro</label>
+        </div>
+    </header>
+
+    <aside>
+        <h2>Indice degli articoli</h2>
+        <ul>
+            <li><a href="#articolo-1">Articolo 1: Introduzione alla programmazione</a></li>
+            <li><a href="#articolo-2">Articolo 2: I linguaggi di programmazione più popolari</a></li>
+        </ul>
+
+        <form>
+            <h3>Iscriviti alla newsletter</h3>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <button type="submit">Iscriviti</button>
+            <p>Ricevi aggiornamenti sui nuovi articoli e contenuti esclusivi.</p>
+        </form>
+    </aside>
+
+    <main>
+        <article id="articolo-1">
+            <h2>Articolo 1: Introduzione alla programmazione</h2>
+            <p>La <strong>programmazione</strong> è un'abilità fondamentale nel mondo moderno. In questo articolo, esploreremo i concetti base della programmazione e come iniziare.</p>
+            <section>
+                <h3>Cos'è la programmazione?</h3>
+                <p>
+                    La programmazione è il <i>processo di scrittura di istruzioni</i> che un computer può eseguire. 
+                    Queste istruzioni sono scritte in un <strong>linguaggio di programmazione</strong>.
+                </p>
+            </section>
+            <section>
+                <h3>Perché imparare a programmare?</h3>
+                <p>Imparare a programmare apre molte opportunità professionali e permette di risolvere problemi in modo creativo.</p>
+            </section>
+        </article>
+        <article id="articolo-2">
+            <h2>Articolo 2: I linguaggi di programmazione più popolari</h2>
+            <p>Esistono molti linguaggi di programmazione, ognuno con le proprie caratteristiche e utilizzi. In questo articolo, daremo un'occhiata ai più popolari.</p>
+            <section>
+                <h3>Python</h3>
+                <p><strong>Python</strong> è un linguaggio di programmazione versatile e facile da imparare, molto utilizzato in <em>ambito scientifico</em> e per lo <em>sviluppo web</em>.</p>
+            </section>
+            <section>
+                <h3>JavaScript</h3>
+                <p><strong>JavaScript</strong> è il linguaggio principale per lo <em>sviluppo web front-end</em>, permettendo di creare interazioni dinamiche nelle pagine web.</p>
+            </section>
+        </article>
+    </main>
+
+    <footer>
+        <p>Sito realizzato da Omar Jarid - 2025</p>
+        <a href="https://www.linkedin.com/in/omar-jarid/" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://github.com/omar-jarid" target="_blank" rel="noopener">GitHub</a>
+    </footer>
+</body>
+</html>
