@@ -1,0 +1,48 @@
+:root {
+    --primary-color: #292984;
+}
+
+[data-theme="dark"] {
+    --primary-color: #f0f0f0;
+}
+
+h1 {
+    color: var(--primary-color);
+}
+
+.pallino {
+    background-color: #fff;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    animation-name: animazione;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+/* ANIMAZIONI */
+@keyframes animazione {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+/* MEDIA QUERIES */
+
+/* TABLET */
+@media screen and (min-width: 768px) {
+    
+
+}
+
+/* DESKTOP */
+@media screen and (min-width: 1200px) {
+    
+
+}
