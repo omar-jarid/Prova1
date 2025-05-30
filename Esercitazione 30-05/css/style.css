@@ -1,0 +1,152 @@
+:root {
+    --primary-color: #3498db;
+    --secondary-color: #2ecc71;
+    --tertiary-color: #cd9225;
+    --font-family: 'Arial', sans-serif;
+    --font-size: 18px;
+    --default-padding: 8px;
+    --default-margin: 8px;
+}
+
+* {  
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font-family);
+}
+
+h1, h2, h3 { color: var(--primary-color) }
+
+main {
+    animation-name: fade-in-out;
+    animation-duration: 2s;
+    animation-delay: 0.5s;
+}
+
+p {
+    line-height: 1.6;
+    font-size: var(--font-size);
+    border: 1px solid var(--primary-color);
+    border-radius: 5px;
+}
+
+a {
+    color: pink;
+    text-decoration: none;
+    text-shadow: none;
+    font-size: var(--font-size);
+    transition: color 0.2s ease-in-out;
+}
+
+a:hover { 
+    color: red; 
+    text-shadow: 0 0 5px rgba(255, 0, 0, 0.5);
+}
+
+li > a {
+    color: var(--tertiary-color);
+    font-size: var(--font-size);
+    transition: color 0.2s ease-in-out;
+}
+
+header, footer {
+    background-color: var(--secondary-color);
+    padding: var(--default-padding);
+    font-size: var(--font-size);
+    text-align: center;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    justify-content: space-between;
+}
+
+footer > p { border: none; }
+
+section {
+    margin: var(--default-margin);
+    padding: var(--default-padding);
+    border: 1px solid var(--primary-color);
+    border-radius: 5px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav > ul { 
+    padding: var(--default-padding) 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.presentazione, .competenze {
+    margin-top: var(--default-margin);
+    margin-left: var(--default-margin);
+    margin-right: var(--default-margin);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.testo { text-align: center; }
+
+.bio {
+    display: flex;
+    gap: var(--default-margin);
+}
+
+.foto {
+    opacity: 1;
+    display: block;
+    height: auto;
+    transition: 0.5s ease;
+    backface-visibility: hidden;
+}
+
+.foto:hover {
+    opacity: 0.3;
+    transform: scale(1.05);
+}
+
+/* ---- ANIMAZIONI ---- */
+@keyframes fade-in-out {
+    0% { opacity: 0; }
+    50% { opacity: 1; }
+    100% { opacity: 0; }
+}
+
+/* ---- MEDIA QUERIES ---- */
+@media screen and (min-width: 768px) {
+    header, footer { padding: 0.5rem; }
+
+    nav > ul {
+        padding: 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: end;
+        gap: 1rem;
+        align-items: center;
+    }
+
+    h1 { font-size: 1.5rem; }
+
+    p {
+        font-size: 0.9rem;
+        border: none;
+    }
+
+    section { 
+        margin: var(--default-margin) 0;
+        padding: var(--default-padding) 0;
+        border: none; 
+    }
+
+    .presentazione, .competenze { align-items: start;}
+
+    .testo { text-align: start; }
+}
