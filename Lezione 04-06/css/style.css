@@ -1,0 +1,21 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+section {
+    background-color: bisque;
+}
+
+.container {
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+@media screen and (min-width: 1300px) {
+    .container {
+        margin-left: 250px;
+        margin-right: 250px;
+    }    
+}
