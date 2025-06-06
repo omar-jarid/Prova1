@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calcolatrice</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Calcolatrice</h1>
+        <p>Inserisci due numeri e scegli un'operazione</p>
+    </header>
+
+    <main>
+        <div class = "numbers">
+            <input id="n1" type="number" placeholder="Primo numero">
+            <input id="n2" type="number" placeholder="Secondo numero">
+        </div>
+        <div class = "buttons">
+            <button onclick="somma()">Somma</button>
+            <button onclick="sottrazione()">Sottrazione</button>
+            <button onclick="moltiplicazione()">Moltiplicazione</button>
+            <button onclick="divisione()">Divisione</button>
+        </div>
+        <p id="risultato"></p>
+    </main>
+
+    <footer>
+        <p>Sito realizzato da Omar Jarid - 2025</p>
+        <div>
+            <a href="https://www.linkedin.com/in/omar-jarid/" target="_blank" rel="noopener">
+                <img src="assets/linkedin.webp" alt="Logo che collega a LinkedIn" width="24">
+            </a>
+            <a href="https://github.com/omar-jarid" target="_blank" rel="noopener">
+                <img src="assets/github.webp" alt="Logo che collega a GitHub" width="24">
+            </a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
