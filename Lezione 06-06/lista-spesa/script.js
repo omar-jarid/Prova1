@@ -11,7 +11,7 @@ const aggiornaLista = () => {
         let button = document.createElement("button");
         button.textContent = "Rimuovi";
         button.onclick = () => {
-            listaSpesa = listaSpesa.filter(i => i !== item);
+            listaSpesa.splice(listaSpesa.indexOf(item), 1);
             aggiornaLista();
         };
 
