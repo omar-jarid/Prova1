@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8">
+    <title>Esempio DOM</title>
+    <style>
+      .evidenziato { background-color: yellow; }
+      .nascosto { display: none; }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1 id="titolo-principale">Benvenuto nel DOM</h1>
+      <nav>
+        <ul class="menu">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#servizi">Servizi</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section id="contenuto">
+        <h2>Introduzione</h2>
+        <p class="intro">Questo è un paragrafo introduttivo.</p>
+        <p class="descrizione">Descrizione dettagliata del contenuto.</p>
+
+        <div class="container">
+          <ul id="lista-elementi">
+            <li data-id="1">Primo elemento</li>
+            <li data-id="2">Secondo elemento</li>
+            <li data-id="3">Terzo elemento</li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 - Tutti i diritti riservati</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
