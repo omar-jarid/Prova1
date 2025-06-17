@@ -1,0 +1,22 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: row;
+    background-color: bisque;
+}
+
+.user-card, .post-card {
+    border: 1px solid #ccc;
+    background-color: #f4f4f4;
+    padding: 16px;
+    border-radius: 8px;
+    width: 250px;
+    margin: 16px auto;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
