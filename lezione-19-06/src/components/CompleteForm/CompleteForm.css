@@ -1,0 +1,42 @@
+button {
+    margin-top: 10px;
+    padding: 5px 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.country { 
+    display: flex; 
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+
+.form-row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.form-row > label {
+    min-width: 120px;
+    margin-right: 1rem;
+    text-align: right;
+}
+
+.gender,
+.interests {
+    display: flex;
+    gap: 1rem;
+}
+
+.gender label,
+.interests label {
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+    margin-right: 0.5rem;
+}

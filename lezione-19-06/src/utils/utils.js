@@ -1,0 +1,1 @@
+const stampa = (msg) => console.log(msg);
